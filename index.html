@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-     <title>Random BG for MAL</title>
-     <script src="random_image.js"></script>
-</head>
-<body>
-     <img src="https://d221.github.io/random-mal-bg/img/bg1.jpg" class="shrinkToFit" id="myPicture">
-</body>
+  <head>
+    <title>Random BG for MAL</title>
+    <!-- <script src="random_image.js"></script> -->
+  </head>
+  <body>
+    <script language="JavaScript">
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+      var count = getRandomInt(34);
+      var fileName = "img/bg" + count + ".jpg";
+      console.log(fileName);
+      window.location.replace(fileName);
+    </script>
+  </body>
 </html>
